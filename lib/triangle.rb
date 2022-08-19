@@ -13,10 +13,9 @@ def kind
   sum3= self.side1+self.side3
 
   if (self.side1<=0 || self.side2<=0 || self.side3<=0 || sum1<=self.side3 || sum2<=self.side1 || sum3<=self.side2)
-    # begin
-     raise TriangleError
-    #   rescue TriangleError=> error
-    #     puts error.message
+
+      raise TriangleError
+      
     elsif (self.side1 == self.side2 && self.side2 == self.side3 && self.side1 != 0)
       return :equilateral
     elsif (self.side1==self.side2 || self.side1==self.side3 || self.side2 == self.side3)
